@@ -1,0 +1,36 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+
+# ~/.config files
+- link:
+    ~/.config/alacritty:
+        path: config/alacritty
+    ~/.config/bspwm:
+        path: config/bspwm
+    ~/.config/dotbot:
+        path: config/bspwm
+    ~/.config/dunst:
+        path: config/dunst
+    ~/.config/nvim:
+        path: config/nvim
+    ~/.config/picom:
+        path: config/picom
+    ~/.config/polybar:
+        path: config/polybar
+    ~/.config/rofi:
+        path: config/rofi
+    ~/.config/sxhkd:
+        path: config/sxhkd
+
+# ~/ files
+- link:
+    ~/.icons:
+    ~/.themes:
+    ~/.oh-my-zsh:
+    ~/.gitconfig:
+    ~/.xinitrc:
+    ~/.Xresources:
+    ~/.zshrc:

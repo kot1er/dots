@@ -1,0 +1,8 @@
+configuration {
+	font: "mononoki 14";
+	show-icons: true;
+	icon-theme: "Arc-ICONS";
+	separator-style: "solid";
+	line-padding: 5;
+	padding: 10;
+}
