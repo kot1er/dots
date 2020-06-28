@@ -5,5 +5,5 @@ Uses [Dotbot](https://github.com/anishathalye/dotbot).
 
 ---
 
-##07/26/2020
+## 07/26/2020
 ![](https://i.kot1er.me/screenshot.png)
