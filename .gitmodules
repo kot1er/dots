@@ -2,6 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "config/goyo.vim"]
-	path = config/goyo.vim
+[submodule "config/nvim/plugged/goyo.vim"]
+	path = config/nvim/plugged/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
