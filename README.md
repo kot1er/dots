@@ -1,7 +1,7 @@
 Uses [Dotbot](https://github.com/anishathalye/dotbot).
 
-* Files and directories in root belong in `~/`.
-* Files and directories inside `config` typically belong in `~/.config`.
+* Files and directories in root belong in `~/`
+* Files and directories inside `config` typically belong in `~/.config`
 
 ---
 
