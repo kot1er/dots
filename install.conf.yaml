@@ -6,31 +6,31 @@
 
 # ~/.config files
 - link:
-    ~/.config/alacritty:
+    /home/josh/.config/alacritty:
         path: config/alacritty
-    ~/.config/bspwm:
+    /home/josh/.config/bspwm:
         path: config/bspwm
-    ~/.config/dotbot:
+    /home/josh/.config/dotbot:
         path: config/bspwm
-    ~/.config/dunst:
+    /home/josh/.config/dunst:
         path: config/dunst
-    ~/.config/nvim:
+    /home/josh/.config/nvim:
         path: config/nvim
-    ~/.config/picom:
+    /home/josh/.config/picom:
         path: config/picom
-    ~/.config/polybar:
+    /home/josh/.config/polybar:
         path: config/polybar
-    ~/.config/rofi:
+    /home/josh/.config/rofi:
         path: config/rofi
-    ~/.config/sxhkd:
+    /home/josh/.config/sxhkd:
         path: config/sxhkd
 
 # ~/ files
 - link:
-    ~/.icons:
-    ~/.themes:
-    ~/.oh-my-zsh:
-    ~/.gitconfig:
-    ~/.xinitrc:
-    ~/.Xresources:
-    ~/.zshrc:
+    /home/josh/.icons:
+    /home/josh/.themes:
+    /home/josh/.oh-my-zsh:
+    /home/josh/.gitconfig:
+    /home/josh/.xinitrc:
+    /home/josh/.Xresources:
+    /home/josh/.zshrc:
