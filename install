@@ -1,0 +1,33 @@
+#!/bin/sh
+
+BOLD="\e[1m\033[34m"
+ERR_BOLD="\e[1m\033[31m"
+ITALICS="\e[3m"
+DIM="\e[2m"
+RESET="\e[0m"
+NORMAL="\e[21m\033[0m"
+
+function output() {
+    printf '\n%b%s%b%-15s%s%b%s%b%-15s' "$BOLD" "source: " $NORMAL "$BASE" " | " $BOLD "link: " $NORMAL "~/$BASE"
+}
+
+function failed() {
+    printf ' | %b%s: %b%s' "$ERR_BOLD" "ERROR" "$NORMAL" "$OUT"
+}
+
+printf '%b%b%s%b\n' "$ITALICS" "$DIM" "Generating links..." "$RESET"
+
+for FILE in home/.*; do
+    BASE=$(basename "$FILE")
+    
+
+    if [ "$BASE" != ".." ] && [ "$BASE" != "." ]; then
+        output
+        OUT=$(ln -sfn "$(pwd)/$FILE" "$HOME/$BASE" 2>&1)
+        if [ $? != 0 ]; then
+            failed
+        fi
+    fi
+done
+
+printf '\n'

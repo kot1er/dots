@@ -1,0 +1,56 @@
+# --- options ---
+set window-title-basename "true"
+set adjust-open "width"
+set show-recent 5
+set scroll-step 50 
+set zoom-min 50
+set zoom-center "true"
+set selection-clipboard "clipboard"
+set search-hadjust "true"
+
+# statusbar
+set guioptions "s" # s=statusbar
+set statusbar-basename "true"
+set statusbar-home-tilde "true"
+set statusbar-h-padding 10
+set statusbar-v-padding 10
+
+
+# --- gui colors ---
+
+set font "mononoki 12"
+set default-bg "#1c1d20"
+set default-fg "#c0c5ce"
+
+set statusbar-fg "#1c1d20"
+set statusbar-bg "#c0c5ce"
+
+set inputbar-bg "#c0c5ce"
+set inputbar-fg "#1c1d20"
+
+set notification-error-bg "#1c1d20"
+set notification-error-fg "#bf616a"
+
+set notification-warning-bg "#1c1d20"
+set notification-warning-fg "#ebcb8b"
+
+set highlight-color "#96b5b4"
+set highlight-active-color "#96b5b4"
+
+set completion-highlight-fg "#1c1d20"
+set completion-highlight-bg "#96b5b4"
+
+set completion-bg "#1c1d20"
+set completion-fg "#96b5b4"
+
+set notification-bg "#90A959"
+set notification-fg "#151515"
+
+
+# --- doc colors ---
+
+set recolor "true"
+set recolor-lightcolor "#1c1d20"
+set recolor-darkcolor "#c0c5ce"
+set recolor-keephue "true"
+

@@ -1,0 +1,50 @@
+[colors]
+foreground = ${xrdb:foreground:#FFFFFF}
+background = ${xrdb:background:#aa000000}
+green = ${xrdb:color2:#00FF00}
+red = ${xrdb:color3:#FF0000}
+
+[bar/test]
+font-0 = "mononoki Nerd Font:weight=bold:pixelsize=12;3"
+modules-right = battery date
+modules-center = title
+modules-left = bspwm
+padding = 2
+background = ${colors.background}
+width = 1900
+height = 30
+offset-x = 10
+offset-y = 10
+module-margin = 1
+wm-restack = bspwm
+
+[module/date]
+type = internal/date
+time = %H:%M
+format = %{A1:notify-send --urgency=low -a "$(date +"%A, %m/%d/%Y")" "$(date -u)":}<label>%{A}
+label = %time%
+
+[module/title]
+type = internal/xwindow
+format = <label> 
+label = %title%
+label-maxlen = 40
+
+[module/bspwm]
+type = internal/bspwm
+format = <label-state> <label-mode>
+label-focused = " "
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = AC
+format-full = %{A1:notify-send --urgency=low -a "Battery level (full)" $(cat /sys/class/power_supply/BAT0/capacity)"%":}<ramp-capacity>%{A}
+format-charging = %{A1:notify-send --urgency=low -a "Battery level (charging)" $(cat /sys/class/power_supply/BAT0/capacity)"%":}%{F#a3be8c}<ramp-capacity>%{F-}%{A}
+format-discharging = %{A1:notify-send --urgency=low -a "Battery level (discharging)" $(cat /sys/class/power_supply/BAT0/capacity)"%":}<ramp-capacity>%{A}
+ramp-capacity-0 = %{F#bf616a}%{F-}
+ramp-capacity-1 = %{F#ebcb8b}%{F-}
+ramp-capacity-2 =  
+ramp-capacity-3 =  
+ramp-capacity-4 = 
