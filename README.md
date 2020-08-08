@@ -1,4 +1,4 @@
-* Files and directories in root belong in `~/`
+* Files and directories in the repo's root belong in `~/`
 * Files and directories inside `config` typically belong in `~/.config`
 
 ### Fonts
