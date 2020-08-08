@@ -4,8 +4,6 @@ git clone https://github.com/kot1er/dots.git && cd dots
 ```
 ---
 
-The contents of `home` are linked inside `~`
-
 ### Fonts
 The font is mononoki, and in some cases the Nerd Fonts patched variant is used for unicode glyphs.
 * [mononoki](https://madmalik.github.io/mononoki/)
