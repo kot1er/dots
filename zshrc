@@ -11,3 +11,5 @@ autoload -Uz compinit
 compinit
 
 PROMPT=$'\e[36m%B[%2~% ]%b \e[0m'
+alias ls='ls --color=auto'
+alias pfetch='USER="user" PF_ASCII="linux" pfetch'

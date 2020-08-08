@@ -6,3 +6,5 @@ configuration {
 	line-padding: 5;
 	padding: 10;
 }
+
+/* vim:ft=css

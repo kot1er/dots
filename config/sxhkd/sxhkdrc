@@ -22,9 +22,9 @@ super + shift + c
 super + {Next,Prior}
 	bspc desktop -f {next,prev}
 
-# Move to previous workspace
-super + Prior
-	bspc desktop -f prev
+# Move focused node to next/previous workspace, and follow it
+super + shift + {Next,Prior}
+    bspc node -d {next,prev} -f
 
 # Focus on next/previous node
 super + {h,l}
@@ -49,6 +49,10 @@ super + {Left,Down,Up,Right}
 # Resize floating node
 super + shift + {Left,Down,Up,Right}
 	bspc node -z {right -20 0,top 0 20,top 0 -20,right 20 0}
+
+# Swap the focused and the biggest nodes, and follow
+super + Up
+    bspc node @focused -s biggest --follow
 
 #  -------------------
 #  App Shortcuts
