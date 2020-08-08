@@ -12,4 +12,5 @@ The font is mononoki, and in some cases the Nerd Fonts patched variant is used f
 ---
 
 ### 07/26/2020
-![](https://i.kot1er.me/screenshot.png)
+![](https://i.kot1er.me/ss.png)
+
