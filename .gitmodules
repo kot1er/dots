@@ -1,3 +1,0 @@
-[submodule "config/nvim/plugged/goyo.vim"]
-	path = home/config/nvim/plugged/goyo.vim
-	url = https://github.com/junegunn/goyo.vim
