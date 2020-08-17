@@ -16,7 +16,13 @@ hi clear CursorLine " Disables the underline caused by previous command
 " Plugins
 call plug#begin()
 
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-" TODO Statusline
+" Statusline
+set noshowmode
+
+let g:lightline = {
+    \ 'colorscheme': 'seoul256',
+    \ }

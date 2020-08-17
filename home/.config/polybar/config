@@ -48,3 +48,5 @@ ramp-capacity-1 = %{F#ebcb8b}%{F-}
 ramp-capacity-2 =  
 ramp-capacity-3 =  
 ramp-capacity-4 = 
+
+/* vim:ft=dosini
