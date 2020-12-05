@@ -1,0 +1,28 @@
+[org/gnome/nautilus/preferences]
+search-filter-time-type='last_modified'
+default-folder-viewer='icon-view'
+
+search-view='list-view'
+
+[org/gnome/nautilus/window-state]
+initial-size=(1838, 418)
+maximized=false
+
+[org/gtk/settings/file-chooser]
+window-position=(785, 41)
+window-size=(1124, 822)
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=166
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+
+[org/gnome/nautilus/list-view]
+default-visible-columns=['name', 'size', 'date_modified', 'starred']
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
+use-tree-view=true

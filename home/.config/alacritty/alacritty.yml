@@ -3,8 +3,8 @@ env:
 
 window:
   padding:
-    x: 8
-    y: 8
+    x: 12
+    y: 12
 
   title: Alacritty
 
@@ -33,25 +33,25 @@ font:
 colors:
   # Default color
   primary:
-    background: '0x1c1d20'
-    foreground: '0xc0c5ce'
+    background: '0x33352a'
+    foreground: '0xb0b28e'
   # Normal colors
   normal:
     black:   '0x1c1d20'
-    red:     '0xbf616a'
-    green:   '0xa3be8c'
-    yellow:  '0xebcb8b'
-    blue:    '0x8fa1b3'
-    magenta: '0xb48ead'
+    red:     '0xf46852'
+    green:   '0x84c298'
+    yellow:  '0xf8df8c'
+    blue:    '0xc0d7ed'
+    magenta: '0xb8b4d0'
     cyan:    '0x96b5b4'
-    white:   '0xc0c5ce'
+    white:   '0xa6b3b5'
   # Bright colors
   bright:
     black:   '0x65737e'
-    red:     '0xbf616a'
+    red:     '0xf2462c'
     green:   '0xa3be8c'
     yellow:  '0xebcb8b'
-    blue:    '0x8fa1b3'
-    magenta: '0xb48ead'
-    cyan:    '0x96b5b4'
-    white:   '0xc0c5ce'                                                                                  
+    blue:    '0xb0cde8'
+    magenta: '0x948eb8'
+    cyan:    '0x8abeb7'
+    white:   '0x859699'                                                                                  
