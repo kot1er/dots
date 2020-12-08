@@ -5,7 +5,7 @@ default-folder-viewer='icon-view'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1838, 418)
+initial-size=(410, 934)
 maximized=false
 
 [org/gtk/settings/file-chooser]
@@ -26,3 +26,9 @@ type-format='category'
 default-visible-columns=['name', 'size', 'date_modified', 'starred']
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
 use-tree-view=true
+
+[org/gnome/charmap/window-state]
+size=(1080, 607)
+
+[org/gnome/charmap]
+last-char=61486
