@@ -1,7 +1,12 @@
-```sh
-git clone https://github.com/kot1er/dots.git && cd dots
-./install
 ```
+distro          void
+wm              herbstluftwm
+x compositor    picom
+bar             polybar
+editor          nvim
+launcher        rofi
+```
+
 ---
 
 ### Fonts
