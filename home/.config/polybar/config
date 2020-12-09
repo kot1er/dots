@@ -4,36 +4,44 @@ background = ${xrdb:background:#aa000000}
 green = ${xrdb:color2:#00FF00}
 red = ${xrdb:color3:#FF0000}
 
-[bar/test]
+[bar/main]
 font-0 = "mononoki Nerd Font:weight=bold:pixelsize=12;3"
-modules-right = battery date
+modules-right = kblayout date battery 
 modules-center = title
-modules-left = bspwm
+modules-left = tags
 padding = 2
 background = ${colors.background}
-width = 1900
+width = 1920
 height = 30
-offset-x = 10
-offset-y = 10
+#offset-x = 10
+#offset-y = 10
 module-margin = 1
-wm-restack = bspwm
 
 [module/date]
 type = internal/date
 time = %H:%M
 format = %{A1:notify-send --urgency=low -a "$(date +"%A, %m/%d/%Y")" "$(date -u)":}<label>%{A}
-label = %time%
+label = %{F#b0b28e}%time%%{F-}
 
 [module/title]
 type = internal/xwindow
 format = <label> 
-label = %title%
+label = %{F#b0b28e}%title%%{F-}
 label-maxlen = 40
 
-[module/bspwm]
-type = internal/bspwm
-format = <label-state> <label-mode>
-label-focused = " "
+[module/kblayout]
+type = custom/script
+exec = kblayout
+format = %{F#b0b28e}<label>%{F-}
+tail = true
+interval = .1
+
+[module/tags]
+type = custom/script
+exec = tags
+format = %{F#b0b28e}<label>%{F-}
+tail = true
+interval = .1
 
 [module/battery]
 type = internal/battery
@@ -45,8 +53,8 @@ format-charging = %{A1:notify-send --urgency=low -a "Battery level (charging)" $
 format-discharging = %{A1:notify-send --urgency=low -a "Battery level (discharging)" $(cat /sys/class/power_supply/BAT0/capacity)"%":}<ramp-capacity>%{A}
 ramp-capacity-0 = %{F#bf616a}%{F-}
 ramp-capacity-1 = %{F#ebcb8b}%{F-}
-ramp-capacity-2 =  
-ramp-capacity-3 =  
-ramp-capacity-4 = 
+ramp-capacity-2 = %{F#b0b28e}%{F-} 
+ramp-capacity-3 = %{F#b0b28e}%{F-}
+ramp-capacity-4 = %{F#b0b28e}%{F-}
 
-/* vim:ft=dosini
+;/* vim:ft=dosini

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 NORMAL="\e[21m\033[0m"
 BOLD="\e[1m\033[34m"
@@ -7,15 +7,26 @@ ITALICS="\e[3m"
 DIM="\e[2m"
 RESET="\e[0m"
 
+while getopts "::f" opt; do
+    case ${opt} in
+        f  ) OPT="f"
+            ;;
+        \? ) printf "Invalid option.\n\tUsage: install [-f]\n"
+            exit 1
+            ;;
+    esac
+done
+
 output() {
-    printf '\n%b%s%b%-15s%s%b%s%b%-15s' "$BOLD" "source: " "$NORMAL" "$BASE" " | " "$BOLD" "link: " "$NORMAL" "$HOME/$BASE"
+    printf "${BOLD}source: ${NORMAL}%-15s${RESET} | " "$BASE"
+    printf "${BOLD}link: ${NORMAL}$HOME/$BASE ${RESET}\n"
 }
 
 failed() {
-    printf ' | %b%s: %b%s' "$ERR_BOLD" "ERROR" "$NORMAL" "$OUT"
+    printf "\t${ERR_BOLD}ERROR${NORMAL} $OUT\n"
 }
 
-printf '%b%b%s%b\n' "$ITALICS" "$DIM" "Generating links..." "$RESET"
+printf "${ITALICS}${DIM}Generating links...${RESET}\n\n"
 
 for FILE in home/.*; do
     BASE=$(basename "$FILE")
@@ -23,7 +34,7 @@ for FILE in home/.*; do
     if [ "$BASE" != ".." ] && [ "$BASE" != "." ]; then
         output
         # save stderr output to variable to print in failed()
-        OUT=$(ln -sfn "$(pwd)/$FILE" "$HOME/$BASE" 2>&1)
+        OUT=$(ln -sn$OPT "$(pwd)/$FILE" "$HOME/$BASE" 2>&1)
         if [ $? != 0 ]; then
             failed
         fi
