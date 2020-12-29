@@ -1,10 +1,14 @@
 configuration {
-	font: "mononoki 14";
-	show-icons: true;
-	icon-theme: "Arc-ICONS";
-	separator-style: "solid";
-	line-padding: 5;
-	padding: 10;
+    font:               "mononoki 12";
+    show-icons:         true;
+    icon-theme:         "Arc-ICONS";
+    separator-style:    "solid";
+    line-padding:       5;
+    padding:            5;
+    location:           1;
+    width:              30;
+    modi:               "drun,window,run,combi";
 }
 
 /* vim:ft=css
+@import "/usr/share/rofi/themes/Paper.rasi"

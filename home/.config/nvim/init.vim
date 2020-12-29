@@ -17,11 +17,16 @@ set expandtab
 call plug#begin()
 
 Plug 'itchyny/lightline.vim'
+Plug 'rip-rip/clang_complete'
 
 call plug#end()
 
 " Statusline
 set noshowmode
+
+let g:clang_library_path='/usr/lib/libclang.so'
+let g:clang_complete_auto=1
+let g:clang_complete_copen=1
 
 let g:lightline = {
     \ 'colorscheme': 'seoul256',
