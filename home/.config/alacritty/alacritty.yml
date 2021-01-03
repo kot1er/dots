@@ -28,7 +28,7 @@ font:
     family: mononoki
     style: Bold Italic
 
-  size: 8.0
+  size: 7.0
 
 colors:
   # Default color
