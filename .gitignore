@@ -4,4 +4,15 @@ home/.config/gtk-2.0/*
 home/.config/pulse/*
 home/.config/nvim/plugged/*
 home/.config/vlc/vlc-qt-interface.conf
-nvim/.netrwhist
+home/.config/nvim/.netrwhist
+home/.config/QtProject.conf
+home/.config/Thunar/
+home/.config/cef_user_data/
+home/.config/configstore/
+home/.config/discord/
+home/.config/htop/
+home/.config/kritadisplayrc
+home/.config/kritarc
+home/.config/mimeapps.list
+home/.config/obs-studio/
+home/.config/xfce4/
