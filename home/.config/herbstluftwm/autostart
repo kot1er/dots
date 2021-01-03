@@ -7,11 +7,13 @@ hc() {
 hc emit_hook reload
 
 # -----  misc  ----- #
+xss-lock -- dm-tool lock &
 setxkbmap -layout "us,il,us(rus)"  -option "grp:alt_shift_toggle"
 feh --bg-fill ~/img/wall2.png
 pkill polybar
 polybar main &
 picom &
+xss-lock "dm-tool lock"
 
 # ---- keybinds ---- #
 hc keyunbind --all  # remove all existing keybindings
@@ -59,7 +61,7 @@ for i in "${!tag_names[@]}" ; do
     key="${tag_keys[$i]}"
     if ! [ -z "$key" ] ; then
         hc keybind "$Mod-$key" use_index "$i"
-        hc keybind "$Mod-Shift-$key" move_index "$i"
+        hc keybind "$Mod-Shift-$key" chain , move_index "$i" , use_index "$i"
     fi
 done
 
