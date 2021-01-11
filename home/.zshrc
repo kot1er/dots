@@ -13,7 +13,7 @@ compinit
 export TERMINAL=alacritty
 export EDITOR=nvim
 
-PROMPT=$'\e[36m%B[%2~% ]%b \e[0m'
+PROMPT=$'%{\e[36m%B%}[%2~% ]%b %{\e[0m%}'
 PATH=$PATH:/home/josh/.cargo/bin
 
 
