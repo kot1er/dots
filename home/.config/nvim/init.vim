@@ -18,6 +18,7 @@ call plug#begin()
 
 Plug 'itchyny/lightline.vim'
 Plug 'rip-rip/clang_complete'
+Plug 'cespare/vim-toml'
 
 call plug#end()
 
