@@ -113,7 +113,7 @@ hc attr theme.normal.color '#33352a'
 hc attr theme.active.inner_color '#b0b28e'
 hc attr theme.normal.inner_color '#4e523d'
 hc attr theme.active.outer_color '#a6b3b5'
-hc attr theme.background_color '#141414'
+hc attr theme.background_color '#33352a'
 
 
 # ---- rules ---- #
