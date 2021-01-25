@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 3.0.11.1
+###  vlc 3.0.12
 ###
 
 ###
@@ -1044,6 +1044,23 @@
 # Metacube (boolean)
 #sout-http-metacube=0
 
+[access_output_rist] # RIST stream output
+
+# RIST target packet size (bytes) (integer)
+#sout-rist-packet-size=1328
+
+# RIST data output caching size (ms) (integer)
+#sout-rist-caching=50
+
+# RIST retry-buffer queue size (ms) (integer)
+#sout-rist-buffer-size=0
+
+# SSRC used in RTP output (default is random, i.e. 0) (integer)
+#sout-rist-ssrc=0
+
+# Stream name (string)
+#sout-rist-stream-name=
+
 [qt] # Qt interface
 
 # Start in minimal view (without menus) (boolean)
@@ -1290,7 +1307,7 @@ qt-privacy-ask=0
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 3.0.11.1 Vetinari
+#sout-avi-encoder=VLC Media Player - 3.0.12 Vetinari
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -1525,6 +1542,35 @@ qt-privacy-ask=0
 
 # User agent (string)
 #http-user-agent=
+
+[rist] # RIST input
+
+# RIST maximum packet size (bytes) (integer)
+#packet-size=1472
+
+# RIST demux/decode maximum jitter (default is 5ms) (integer)
+#maximum-jitter=5
+
+# RIST latency (ms) (integer)
+#latency=1000
+
+# RIST nack retry interval (ms) (integer)
+#retry-interval=132
+
+# RIST reorder buffer (ms) (integer)
+#reorder-buffer=70
+
+# RIST maximum retry count (integer)
+#max-retries=10
+
+# RIST nack type, 0 = range, 1 = bitmask. Default is range (integer)
+#nack-type=0
+
+# Disable NACK output packets (boolean)
+#disable-nacks=0
+
+# Do not check for a valid rtcp message from the encoder (boolean)
+#mcast-blind-nacks=0
 
 [libbluray] # Blu-ray Disc support (libbluray)
 

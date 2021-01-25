@@ -9,9 +9,9 @@ hc emit_hook reload
 # -----  misc  ----- #
 xss-lock -- dm-tool lock &
 setxkbmap -layout "us,il,us(rus)"  -option "grp:alt_shift_toggle"
-feh --bg-fill ~/img/wall2.png
-pkill polybar
-polybar main &
+feh --bg-fill ~/img/walls/wall2.png
+pkill bar
+bar &
 picom &
 xss-lock "dm-tool lock"
 
@@ -26,7 +26,6 @@ hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn alacritty
 hc keybind $Mod-p spawn rofi -show drun
 hc keybind Print spawn screenshot
-hc keybind $Mod-Print spawn screencap 
 
 # focus
 hc keybind $Mod-h     focus left

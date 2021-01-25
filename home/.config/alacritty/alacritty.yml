@@ -1,5 +1,7 @@
 env:
   TERM: alacritty
+  LANG: "en_US.UTF-8"
+  LC_CTYPE: "en_US.UTF-8"
 
 window:
   padding:
@@ -13,22 +15,23 @@ scrolling:
 
 font:
   normal:
-    family: mononoki
+      #family: IBM Plex Mono
+    family: cherry 
     style: Regular
   
-  bold:
-    family: mononoki
-    style: Bold
+#bold:
+#    family: mononoki Nerd Font mono
+#    style: Bold
+#
+#  italic:
+#    family: mononoki Nerd Font mono 
+#    style: Italic
+#
+#  bold_italic:
+#    family: mononoki Nerd Font mono 
+#    style: Bold Italic
 
-  italic:
-    family: mononoki
-    style: Italic
-
-  bold_italic:
-    family: mononoki
-    style: Bold Italic
-
-  size: 7.0
+  size: 7.0 
 
 colors:
   # Default color
