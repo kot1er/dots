@@ -9,6 +9,11 @@ launcher        rofi
 
 ---
 
+##### To do
+- [ ] rewrite bar using herb hooks
+- [ ] modify colors
+- [ ] dark/light theme toggle
+
 ### Fonts
 The font is mononoki, and in some cases the Nerd Fonts patched variant is used for unicode glyphs.
 * [mononoki](https://madmalik.github.io/mononoki/)
