@@ -5,7 +5,7 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/josh/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -13,8 +13,8 @@ compinit
 export TERMINAL=alacritty
 export EDITOR=nvim
 
-PROMPT=$'%{\e[34m%}[%2~% ]%b %{\e[0m%}'
-PATH=$PATH:/home/josh/.cargo/bin
+PROMPT=$'%B%{\e[34m%}[%2~% ]%b %{\e[0m%}%b'
+PATH=$PATH:$HOME/.cargo/bin
 
 
 alias sudo='sudo '
