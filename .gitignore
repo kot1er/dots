@@ -1,8 +1,8 @@
-home/.config/GIMP/*
-home/.config/glib-2.0/*
-home/.config/gtk-2.0/*
-home/.config/pulse/*
-home/.config/nvim/plugged/*
+home/.config/GIMP/
+home/.config/glib-2.0/
+home/.config/gtk-2.0/
+home/.config/pulse/
+home/.config/nvim/plugged/
 home/.config/vlc/vlc-qt-interface.conf
 home/.config/nvim/.netrwhist
 home/.config/QtProject.conf
@@ -16,3 +16,4 @@ home/.config/kritarc
 home/.config/mimeapps.list
 home/.config/obs-studio/
 home/.config/xfce4/
+home/.config/vlc/
