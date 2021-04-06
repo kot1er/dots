@@ -9,7 +9,7 @@ hc emit_hook reload
 # -----  misc  ----- #
 xss-lock -- dm-tool lock &
 setxkbmap -layout "us,il,us(rus)"  -option "grp:alt_shift_toggle"
-feh --bg-fill ~/img/walls/wall2.png
+feh --bg-fill ~/img/walls/wall.jpg
 pkill bar
 bar &
 picom &
@@ -102,17 +102,17 @@ hc set frame_border_inner_width 0
 hc set window_gap 5 
 hc pad 0 36 6 6 6
 
-hc attr theme.inner_width 3
-hc attr theme.border_width 10        # window border width
+hc attr theme.inner_width 0
+hc attr theme.border_width 0        # window border width
 hc attr theme.floating.border_width 0
 hc attr theme.floating.outer_width 1
 
-hc attr theme.active.color '#33352a'
-hc attr theme.normal.color '#33352a'
-hc attr theme.active.inner_color '#b0b28e'
-hc attr theme.normal.inner_color '#4e523d'
-hc attr theme.active.outer_color '#a6b3b5'
-hc attr theme.background_color '#33352a'
+hc attr theme.active.color '#000000'
+hc attr theme.normal.color '#eeeeee'
+#hc attr theme.active.inner_color '#ff0000'
+hc attr theme.normal.inner_color '#f00'
+#hc attr theme.active.outer_color '#dddddd'
+#hc attr theme.background_color '#33352a'
 
 
 # ---- rules ---- #
@@ -124,6 +124,9 @@ hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 
 hc set tree_style '╾│ ├└╼─┐'
+
+pkill bar
+bar &
 
 hc unlock
 
