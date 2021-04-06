@@ -12,6 +12,7 @@ launcher        rofi
 ##### To do
 - [ ] rewrite bar using herb hooks
 - [ ] modify colors
+- [ ] rofi theme
 - [ ] dark/light theme toggle
 
 ### Fonts
